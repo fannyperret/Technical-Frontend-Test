@@ -1,10 +1,26 @@
+window.onload = function () {
+    var fiveMinutes = 60 * 5 + 2,
+        display = document.querySelector('#counterTimer');
+    startTimer(fiveMinutes, display);
+
+    setTimeout(() => {
+        giveAStar();
+        showModal();
+    }, 3000);
+};
+
+
 let showModal = function () {
 
-    var modal = document.getElementById("congratulationModal");
-    var badge = document.querySelector(".badge");
+    var modal = document.getElementById("congratulationModal"),
+        badge = document.querySelector(".badge");
 
     modal.style.display = "flex";
     badge.style.backgroundColor = "#181A21";
+
+    setTimeout(() => {
+        modal.style.display = "none";
+    }, 5000);
 
 }
 
@@ -28,17 +44,6 @@ let startTimer = function (duration, display) {
     }, 1000);
 
 }
-
-window.onload = function () {
-    var fiveMinutes = 60 * 5 + 2,
-        display = document.querySelector('#counterTimer');
-    startTimer(fiveMinutes, display);
-
-    setTimeout(() => {
-        giveAStar();
-        showModal();
-    }, 3000);
-};
 
 let giveAStar = function () {
 
