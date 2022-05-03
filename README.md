@@ -1,8 +1,8 @@
 #Technical Frontend Test
 
 
-![Prototype one](viewBefore.png)
-![Prototype two](viewAfter.png)
+![Prototype one](viewBefore.png = 250x)
+![Prototype two](viewAfter.png = 250x)
 
 
 <em>1. How long did you spend on the coding test?</em>
