@@ -20,6 +20,7 @@ let showModal = function () {
 
     setTimeout(() => {
         modal.style.display = "none";
+        badge.style.backgroundColor = "#0B0B0D";
     }, 5000);
 
 }
